@@ -16,7 +16,7 @@ jobs:
       - name: Run Super Linter
         uses: github/super-linter@v5
         env:
-          VALIDATE_ALL_CODEBASE: false # to parse and lint only added new codes
+          VALIDATE_ALL_CODEBASE: true # to parse and lint only added new codes
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VALIDATE_JAVA: true
           DEFAULT_BRANCH: main
